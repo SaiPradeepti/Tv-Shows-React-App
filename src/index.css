@@ -4,7 +4,12 @@ Variables
 ===============
 */
 :root {
-  --primary-color: #151d2d;
+  --clr-primary-color: #151d2d;
+  --clr-dark-grey: #626a7a;
+  --clr-light-grey: #7c8c94;
+  --clr-dark-blue: #6378bd;
+  --clr-dark-maroon: #662621;
+  --clr-light-pink: #c496bb;
 }
 
 /*
@@ -21,6 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--primary-color);
 }
 ul {
   list-style-type: none;
@@ -76,3 +82,8 @@ p {
     line-height: 1;
   }
 }
+/*
+=============== 
+Shows
+===============
+*/
