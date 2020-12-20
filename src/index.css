@@ -228,7 +228,38 @@ Shows
 Modal
 ===============
 */
-@keyframes customEnterOverlayAnimation {
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  /* z-index: 50; */
+}
+
+.show-modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  animation: EnterOverlayAnimation 1s forwards;
+}
+.show-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes EnterOverlayAnimation {
   0% {
     transform: scale(0);
   }
