@@ -271,6 +271,8 @@ Modal
 .modal-ShowImage img {
   height: 90%;
   width: 70%;
+  box-shadow: 0px 10px 30px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 .modal-ShowDetails {
   width: 55%;
@@ -281,11 +283,13 @@ Modal
   position: absolute;
   top: 5%;
   right: 5%;
-  background: none;
+  border-radius: 50%;
+  background: var(--clr-primary-color);
+  color: white;
   border: none;
-  text-align: left;
   font-weight: bold;
   font-size: 1.3rem;
+  padding: 0.5rem;
 }
 
 .close {
