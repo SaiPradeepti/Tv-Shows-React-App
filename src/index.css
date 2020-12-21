@@ -259,6 +259,7 @@ Modal
   border-radius: 50px;
   min-width: 350px;
   animation: EnterOverlayAnimation 1s forwards;
+  position: relative;
 }
 .modal-ShowImage {
   padding: 1rem;
@@ -273,8 +274,18 @@ Modal
 }
 .modal-ShowDetails {
   width: 55%;
-  padding: 1rem;
+  padding: 3rem 1rem 1rem 1rem;
   text-align: center;
+}
+.modal-close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .close {

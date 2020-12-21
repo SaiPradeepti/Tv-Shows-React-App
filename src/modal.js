@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { AiOutlineClose } from "react-icons/ai";
 
 const Modal = (props) => {
     const {id,title,image,year,description,genre} = props.item;
@@ -13,15 +14,14 @@ const Modal = (props) => {
                         <img src={image} alt={title}/>
                     </div>
                     <div className="modal-ShowDetails">
+                        <button className="modal-close" onClick={() => {
+                            document.querySelector('.show-modalOverlay').classList.add('close');
+                            document.querySelector('.show-modal').classList.add('close');
+                        }}><AiOutlineClose /></button>
                         <p style={{textAlign: 'center'}}>{title}</p>
                         <p>Plot: {description}</p>
                         <p>Genre: {genre}</p>
-                        <p>Year: {year}</p>
-                        <button className="modal-close" onClick={() => {
-                            console.log('close modal');
-                            document.querySelector('.show-modalOverlay').classList.add('close');
-                            document.querySelector('.show-modal').classList.add('close');
-                        }}>close</button>
+                        <p>Year: {year}</p>                        
                     </div>
                 </div>
             </div>
